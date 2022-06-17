@@ -75,7 +75,7 @@ function App() {
 
   function matchWords(e) {
     setMessage('')
-    if (e.target.value === word) {
+    if (e.target.value.toLowerCase() === word) {
       setIsPlaying(true)
       notify()
       setTypedValue('')
